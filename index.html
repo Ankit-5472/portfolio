@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Sharma | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #0a0a0a; 
+            color: #f5f5f5; 
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background: #111;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        nav a {
+            color: #00bcd4;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        nav div:first-child { font-size: 1.2rem; font-weight: bold; color: #00bcd4; }
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            padding: 0 20px;
+        }
+        header h1 { font-size: 2.5rem; }
+        header p { font-size: 1.2rem; margin-top: 10px; color: #bbb; }
+
+        section { padding: 60px 30px; }
+        h2 { text-align: center; margin-bottom: 40px; color: #00bcd4; font-size: 2rem; }
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover { background: #222; transform: translateY(-5px); }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #00bcd4;
+            color: #0a0a0a;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav div:last-child {
+                margin-top: 10px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            nav a {
+                margin: 10px 10px 0 0;
+                font-size: 0.95rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            section {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div><strong>Ankit Sharma</strong></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Hi, I'm Ankit Sharma</h1>
+    <p>Android & Flutter Developer | Building Next-Gen Apps</p>
+    <a href="#contact" class="button">Let's Connect</a>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">I am a passionate Android Developer with experience building scalable apps using Kotlin, Flutter, WebSockets, and real-time communication technologies. I aim to craft smooth, performant mobile experiences that users love.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card">Kotlin</div>
+        <div class="card">Flutter</div>
+        <div class="card">Firebase</div>
+        <div class="card">Agora SDK</div>
+        <div class="card">REST APIs</div>
+        <div class="card">WebSockets</div>
+        <div class="card">FCM</div>
+        <div class="card">MVVM Architecture</div>
+        <div class="card">Payments Integration</div>
+        <div class="card">Git</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Call Astro</h3>
+            <p>Astrology consultation app with real-time chat, audio and video calls.</p>
+        </div>
+        <div class="card">
+            <h3>Astro Mall</h3>
+            <p>In-app E-commerce platform for astrology services and products.</p>
+        </div>
+        <div class="card">
+            <h3>Pooja Booking</h3>
+            <p>Custom booking for religious ceremonies and events.</p>
+        </div>
+        <div class="card">
+            <h3>Numerology Report</h3>
+            <p>Flutter module for generating detailed numerology reports.</p>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        <strong>Vas Ventures Pvt Ltd</strong><br>
+        Android Developer | April 2023 - Present<br><br>
+        - Developed user and astrologer apps for Call Astro.<br>
+        - Integrated WebSockets, Agora SDK, Deep Links, FCM notifications.<br>
+        - Flutter migration for iOS app expansion.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p style="text-align:center;">📧 Email: your.email@example.com</p>
+    <p style="text-align:center;">💻 GitHub: github.com/yourgithub</p>
+    <p style="text-align:center;">🌐 LinkedIn: linkedin.com/in/yourlinkedin</p>
+</section>
+
+<footer>
+    &copy; 2025 Ankit Sharma | All Rights Reserved
+</footer>
+
+</body>
+</html>
